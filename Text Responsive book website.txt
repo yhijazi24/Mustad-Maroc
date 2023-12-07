@@ -1,0 +1,167 @@
+========== HEADER ==========
+.nav__logo
+Mustad Maroc
+
+.nav__link
+Home - Products - Where to buy - About Us - Testimonial - Contact Us
+
+========== HOME ==========
+.home__title
+190 <br>
+The Hoofcare People
+
+.home__description
+Mustad has made products for Hoofcare People by Hoofcare People for over 190 years. We welcome you to this unique global community that continues to move the industry forward. 
+
+.button
+Swipe & Explore
+********
+.home__title
+14eme edition <br>
+Du salon du cheval
+
+
+.home__description
+ 
+
+.button
+Check out
+
+********
+.home__title
+Our Partners <br>
+
+
+
+.home__description
+Thriving through partnerships with industry leaders and startups alike, we navigate challenges, innovate, and achieve success together.
+ 
+
+.button
+Check out
+
+********
+.home__title
+Our Stores <br>
+
+
+
+.home__description
+Explore our brand at various global locations, delivering quality and innovation to diverse markets worldwide.
+ 
+
+.button
+Check out
+
+========== Products ==========
+.products__title
+Fers
+
+Clous
+
+Outils de marechalerie
+
+========== Top Products ==========
+.section__title
+Top Products
+
+.product__title .product__discount .product__price
+Featured Book
+$11.99
+$19.99
+
+========== Where to Buy ==========
+.buy__title
+STORE LOCATOR
+
+.buy__description
+Looking for a distributor or dealer of horseshoes, nails or hoofcare tools? Search through our network of dealers and partners
+
+.button
+Contact Us
+
+
+========== About Us ==========
+.about__title
+About Us
+
+.about__description
+Mustad Hoofcare, a trusted name since 1832, is a leading provider of innovative solutions in equine hoof care. Specializing in horseshoes, nails, and advanced hoof care supplements, Mustad Hoofcare is dedicated to promoting the health and performance of horses worldwide. Their commitment to blending tradition with cutting-edge technology makes them a go-to choice for horse owners, farriers, and equine professionals seeking reliable solutions for optimal hoof health.
+
+
+========== TESTIMONIAL ==========
+.section__title
+Customer Opinions
+
+.testimonial__title .testimonial__description
+Rial Loz
+The best website to buy books, the purchase 
+is very easy to make and has great discounts.
+
+========== Contact Us ==========
+.Contact__title
+HOW CAN WE HELP YOU?
+
+.contact__descrition
+Feel free to contact our service team if you have questions about our products and services.
+
+.button
+Contact Us
+
+========== Contact Us Page ==========
+
+.us__title
+How can we help you? <pr>
+Get in contac
+
+.us__input 
+name
+
+.us__input
+email
+
+.us__input
+Phone Number
+
+.us__input
+Specify tou request
+
+.button
+Submit
+
+========== FOOTER ==========
+.footer__logo
+Mustad Maroc
+
+.footer__description
+Since 1832
+
+footer__title .footer__link
+About Us
+    Since 1832
+    Dedicated to the hoofcare industry
+    About this website
+    About the Mustad Hoofcare Group
+    Contact
+
+PRODUCT RANGE
+    Horseshoes
+    Nails
+    Rasps
+    Farrier tools
+    Care products
+
+Contact
+ Av. Hacienda <br>
+ Lima 4321, Perú 
+
+ e.book@email.com <br>
+ 0987-654-321
+
+Social
+ https://www.facebook.com/
+ https://www.instagram.com/
+ https://twitter.com/
+
+.footer__copy
+&#169; All Rights Reserved By Yahya Hijazi
