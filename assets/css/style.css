@@ -1,14 +1,76 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
+@font-face {
+    font-display: swap;
+    font-family: Eurostile;
+    font-style: normal;
+    font-weight: 400;
+    src:url(/assets/fonts/Eurostile-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Eurostile;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Eurostile Bold"),local("Eurostile-Bold"),url(/assets/fonts/Eurostile-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Eurostile;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Eurostile Extended-Black"),local("Eurostile-Extended-Black"),url(/assets/fonts/Eurostile-Extended-Black.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter Regular"),local("Inter-Regular"),url(/assets/fonts/Eurostile-Regular.woff) format("truetype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 200;
+    src: local("Inter Light"),local("Inter-Light"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter Medium"),local("Inter-Medium"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Inter SemiBold"),local("Inter-SemiBold"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-SemiBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Inter Bold"),local("Inter-Bold"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Bold.ttf) format("truetype")
+}
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
+    --header-height: 7rem;
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(230, 71%, 38%);
-    --title-color: hsl(229, 63%, 52%);
+    --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 0%);
     --border-color: hsl(230, 50%, 90%);
     --white-color: hsl(0, 0%, 100%);
@@ -17,8 +79,8 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Montserrat", sans-serif;
-    --second-font: "Montagu Slab", serif;
+    --body-font: "Eurostile", sans-serif;
+    --second-font: "Fira", sans-serif;
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -69,7 +131,7 @@ button {
 }
 
 body {
-    background-color: var(--body-color);
+    background-color: #ECEFF2;
     color: var(--text-color);
     transition: background-color .4s;
 }
@@ -105,7 +167,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1220px;
+    max-width: 1440px;
     margin-inline: 1.5rem;
 }
 
@@ -131,21 +193,307 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    z-index: var(--z-fixed);
+    border-bottom: 0.1px solid #ccbfbf;
+    transition: box-shadow .4s, background-color .4s;
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.nav__logo img {
+    font-size: 1.25rem;
+    position: relative;
+    left: 20px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+}
+
+.nav__link {
+    color: var(--title-color);
+    transition: color .4s;
+}
+
+.nav__link span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+    border-bottom: 1px solid #0057B8;
+    transition: border .4s;
+}
+
+.dropdown__menu {
+    position: absolute;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+
+}
+
+.nav__items:hover .nav__link {
+    color: var(--first-color);
+    border-bottom: 1px solid #0057B8;
+    transition: border .4s;
+
+}
+
+.nav__items:hover .dropdown__menu {
+    display: block;
+}
+
+.dropdown__link {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    color: #9C9C9C;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 600;
+    transition: background-color .4s;
+    position: relative;
+
+}
+
+.dropdown__link:hover {
+    color: #0057B8;
+}
+
+.dropdown__link:hover span {
+    border-bottom: 1.2px solid #0057B8;
+}
 
 
-/* Navigation for mobile devices */
+
+.nav__actions {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.nav__actions button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0057B8;
+    font-weight: var(--font-semi-bold);
+    padding: 1rem 1.5rem;
+    transition: box-shadow .4s;
+    border: 1px solid #0057B8;
+}
+
+.nav__actions button:hover {
+    box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+    background-color: #0057B8;
+    color: white;
+}
+
 
 
 /* Add shadow header */
+/*@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--container-color);
+        box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .1);
+        padding: 1.25rem 4rem;
+        transition: background-color .4s;
+    }
+}
 
 
 /* Active link */
 
 /*=============== HOME ===============*/
+.home__swiper {
+    margin: initial;
+    width: 100%;
+}
+
+.home__container {
+    padding-top: 2rem;
+    row-gap: 2.5rem;
+    scale: 1;
+}
+
+.home__article,
+.home__bg {
+    width: 1220px;
+    height: 570px;
+    border-radius: 10px;
+    transition: scale .4s;
+}
+
+.home__article {
+    scale: .8;
+    box-shadow: 0 4px 32px #0057B8;
+
+
+}
+
+.home__bg {
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.bg1,
+.bg3 {
+    object-position: 30% 100%;
+}
+
+.bg4 {
+    object-position: 100% 40%;
+
+}
+
+
+.home__body {
+    align-items: center;
+    background: none;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    padding: 0 2rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+}
+
+.home__title {
+    text-align: center;
+    font-size: 98px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: var(--body-font);
+}
+
+.home1 {
+    color: white;
+}
+
+.home__description {
+    font-size: 19px;
+    margin: 70px 0 0;
+    color: white;
+    text-align: center;
+    width: 670px;
+    height: 91px;
+}
+
+.Btn--with-vertical-line {
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.Btn--with-vertical-line:before {
+    background-color: #fff;
+    height: 4rem;
+    top: 0
+}
+
+.Btn--with-vertical-line:after,
+.Btn--with-vertical-line:before {
+    content: "";
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    width: .2rem
+}
+
+.Btn--with-vertical-line:after {
+    background-color: #000;
+    height: .8rem;
+    top: -.8rem;
+    transition: top .3s ease
+}
+
+.Btn--with-vertical-line:focus,
+.Btn--with-vertical-line:hover {
+    color: inherit
+}
+
+.Btn--with-vertical-line:focus:after,
+.Btn--with-vertical-line:hover:after {
+    top: 4rem
+}
+
+
+.home__btn {
+    font-size: 16px;
+    color: white;
+    margin: 20px 0 0;
+    padding: 80px 0 0;
+    font-weight: 400;
+}
 
 
 /* Swiper class */
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    scale: 1;
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: initial;
+    height: initial;
+    background-color: white;
+    border: 2px solid #0057B8;
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #0057B8;
+    transition: border .4s background-color .4s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+    background-color: #0057B8;
+    color: white;
+    transform: translateY(2px)
+}
 
 /*=============== BUTTON ===============*/
 
