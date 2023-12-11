@@ -1,67 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
-@font-face {
-    font-display: swap;
-    font-family: Eurostile;
-    font-style: normal;
-    font-weight: 400;
-    src:url(/assets/fonts/Eurostile-Regular.woff) format("woff")
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Michroma&display=swap');
 
-@font-face {
-    font-display: swap;
-    font-family: Eurostile;
-    font-style: normal;
-    font-weight: 600;
-    src: local("Eurostile Bold"),local("Eurostile-Bold"),url(/assets/fonts/Eurostile-Bold.woff) format("woff")
-}
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
 
-@font-face {
-    font-display: swap;
-    font-family: Eurostile;
-    font-style: normal;
-    font-weight: 700;
-    src: local("Eurostile Extended-Black"),local("Eurostile-Extended-Black"),url(/assets/fonts/Eurostile-Extended-Black.woff) format("woff")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Inter Regular"),local("Inter-Regular"),url(/assets/fonts/Eurostile-Regular.woff) format("truetype")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 200;
-    src: local("Inter Light"),local("Inter-Light"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Light.ttf) format("truetype")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Inter Medium"),local("Inter-Medium"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Medium.ttf) format("truetype")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    src: local("Inter SemiBold"),local("Inter-SemiBold"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-SemiBold.ttf) format("truetype")
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    src: local("Inter Bold"),local("Inter-Bold"),url(/profiles/mustad/themes/mustad_theme/fonts/Inter-Bold.ttf) format("truetype")
-}
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;1,500;1,900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -79,8 +21,9 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Eurostile", sans-serif;
-    --second-font: "Fira", sans-serif;
+
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Montagu Slab", 'serif';
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -235,6 +178,7 @@ img {
 }
 
 .nav__link span {
+
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -295,7 +239,17 @@ img {
     transition: color .4s;
 }
 
-.nav__actions button {
+.button__title {
+    color: #0057B8;
+    text-decoration: none;
+}
+
+.button:hover .button__title {
+    color: white;
+    text-decoration: none;
+}
+
+button {
     display: inline-block;
     background-color: #ffffff;
     color: #0057B8;
@@ -305,11 +259,13 @@ img {
     border: 1px solid #0057B8;
 }
 
-.nav__actions button:hover {
+button:hover {
     box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
     background-color: #0057B8;
     color: white;
 }
+
+
 
 
 
@@ -388,7 +344,7 @@ img {
     right: 0;
     text-align: center;
     top: 0;
-
+    scale: .85;
 }
 
 .home__title {
@@ -399,7 +355,7 @@ img {
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    font-family: var(--body-font);
+    font-family: 'Public Sans', sans-serif;
 }
 
 .home1 {
@@ -495,10 +451,62 @@ img {
     transform: translateY(2px)
 }
 
-/*=============== BUTTON ===============*/
-
-
 /*=============== PRODUCTS ===============*/
+.products__section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#ECEFF2, #9C9C9C);
+
+}
+
+.products__container {
+    align-items: center;
+    row-gap: 3rem;
+
+
+}
+
+.product__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 820px;
+}
+
+.product__title {
+    font-family: var(--body-font);
+    font-size: 25px;
+    font-weight: 600;
+}
+.section__title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #9C9C9C;
+    font-family:var(--body-font); 
+}
+
+.product_link {
+    color: var(--title-color);
+    transition: color .4s;
+    
+}
+
+.product_link:hover {
+    color: #9C9C9C;
+    border-bottom: 1px solid #9C9C9C;
+    transition: border .4s;
+}
 
 
 /*=============== TOP PRODUCTS ===============*/
