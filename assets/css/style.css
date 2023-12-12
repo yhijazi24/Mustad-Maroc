@@ -265,26 +265,6 @@ button:hover {
     color: white;
 }
 
-
-
-
-
-/* Add shadow header */
-/*@media screen and (max-width: 1150px) {
-    .nav__menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: var(--container-color);
-        box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .1);
-        padding: 1.25rem 4rem;
-        transition: background-color .4s;
-    }
-}
-
-
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -554,10 +534,6 @@ button:hover {
     margin-left: 40px;
 }
 
-gmpx-split-layout {
-    border-radius: 15px;
-}
-
 gmpx-store-locator {
     width: 100%;
     height: 100%;
@@ -753,7 +729,136 @@ gmpx-store-locator {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (min-width: 320px) {
+    .home__container {
+        scale: 1;
+    }
 
+    .home__article,
+    .home__bg {
+        width: 345px;
+        height: 570px;
+        border-radius: 10px;
+        transition: scale .4s;
+    }
+    .home__article {
+        scale: 0.8;
+        box-shadow: 0 4px 32px #0057B8;
+    }
+    .home__body {
+        scale: 0.5;
+    }
+    .home__title{
+        font-size: 86px;
+    }
+
+    .home__description{
+        width: 500px;
+        height: 50px;
+    }
+    .Btn--with-vertical-line {
+        margin-top: 90px;
+    }
+    .products__section {
+        row-gap: 1.5rem;
+    }
+
+    .product__description {
+        margin-bottom: 35px;
+    }
+
+    .products {
+        display: block;
+    }
+
+    .buy__container {
+        display: block;
+    }
+
+    .buy__map {
+        margin-left: 17.5px;
+    }
+
+    gmpx-store-locator {
+        width: 300px;
+        height: 100%;
+        --gmpx-color-surface: #fff;
+        --gmpx-color-on-surface: #212121;
+        --gmpx-color-on-surface-variant: #757575;
+        --gmpx-color-primary: #1967d2;
+        --gmpx-color-outline: #e0e0e0;
+        --gmpx-fixed-panel-width-row-layout: 20em;
+        --gmpx-fixed-panel-height-column-layout: 40%;
+        --gmpx-font-family-base: "Roboto", sans-serif;
+        --gmpx-font-family-headings: "Roboto", sans-serif;
+        --gmpx-font-size-base: 0.875rem;
+        --gmpx-hours-color-open: #188038;
+        --gmpx-hours-color-closed: #d50000;
+        --gmpx-rating-color: #ffb300;
+        --gmpx-rating-color-empty: #e0e0e0;
+
+    }
+
+    .buy__card {
+        margin-bottom: 40px;
+    }
+
+    #map {
+        height: 400px;
+        width: 50%;
+    }
+
+    .about__article {
+        margin-bottom: 175px;
+    }
+
+    .about__video {
+        height: 600px;
+    }
+
+    .about__card {
+        scale: .7;
+    }
+
+    .about__description {
+        width: 400px;
+        height: 430px;
+        margin-bottom: 50px;
+    }
+
+    .about__title {
+        font-size: 24px;
+    }
+
+    .about__title:after {
+        width: 70px;
+        right: 130px;
+    }
+
+    .about__title:before {
+        width: 70px;
+        left: 130px;
+    }
+
+    .footer__container {
+        display: block;
+    }
+
+    .footer__contact {
+        margin-bottom: 60px;
+        padding-left: 0;
+    }
+
+    .contact__description {
+        width: 250px;
+    }
+
+    .footer__data {
+
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
 
 /* For medium devices */
 
