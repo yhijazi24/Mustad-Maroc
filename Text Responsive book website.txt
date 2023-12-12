@@ -61,15 +61,6 @@ Clous
 
 Outils de marechalerie
 
-========== Top Products ==========
-.section__title
-Top Products
-
-.product__title .product__discount .product__price
-Featured Book
-$11.99
-$19.99
-
 ========== Where to Buy ==========
 .buy__title
 STORE LOCATOR
@@ -86,17 +77,8 @@ Contact Us
 About Us
 
 .about__description
-Mustad Hoofcare, a trusted name since 1832, is a leading provider of innovative solutions in equine hoof care. Specializing in horseshoes, nails, and advanced hoof care supplements, Mustad Hoofcare is dedicated to promoting the health and performance of horses worldwide. Their commitment to blending tradition with cutting-edge technology makes them a go-to choice for horse owners, farriers, and equine professionals seeking reliable solutions for optimal hoof health.
-
-
-========== TESTIMONIAL ==========
-.section__title
-Customer Opinions
-
-.testimonial__title .testimonial__description
-Rial Loz
-The best website to buy books, the purchase 
-is very easy to make and has great discounts.
+The Mustad Group has been active in the Hoofcare market for 180 years, being founded in Gjøvik, a small industrial town in Norway, in 1832. Products include horseshoe nails, horse shoes, horse rasps, farrier tools, vitamin and mineral supplements as well as specialty products for the care of horse’s hooves. The Mustad Hoofcare Group employs over 500 people in companies located all over the world. We are a truly global company with local presence in all the major markets. Every day we sponsor or directly perform a Hoofcare clinic somewhere in the world.
+Today the 7th generation of Mustad’s are owning and running the company.
 
 ========== Contact Us ==========
 .Contact__title

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="https://www.mustad.com/sites/mustad.com/files/logo/Mustad%E2%80%94logo.svg"
+        type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="conts-assets/styles.css">
+
+    <title>Mustad Maroc website - Yahya Hijazi</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="https://www.mustad.com/sites/mustad.com/files/logo/Mustad%E2%80%94logo.svg" alt="image">
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__items nav1" id="myButton">
+                        <a href="#product" class="nav__link" id="productsLink">
+                            <span>Products</span>
+                        </a>
+                        <ul class="dropdown__menu">
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link"><span>Horseshoes</span></a>
+
+                            </li>
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link"><span>Nails</span></a>
+
+                            </li>
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link"><span>Rasps</span></a>
+
+                            </li>
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link"><span>Tools</span></a>
+
+                            </li>
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link">Care<span></span></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#buy" class="nav__link" id="buyLink">
+                            <span>Where to buy</span>
+                        </a>
+                        <ul class="dropdown__menu">
+                            <li class="products__items">
+                                <a href="#" class="dropdown__link"><span>Local Store</span></a>
+
+                            </li>
+                            <li class="products__items">
+                                <a href="https://www.mustad.com/en_us/store-locator"
+                                    class="dropdown__link"><span>International Stores</span></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#about" class="nav__link" id="AboutLink">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button type="button" class="button"><a href="contact.html" class="button__title">Contact
+                        Us</a></button>
+            </div>
+        </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== Contact Us ====================-->
+        <section class=" contact section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="Hero Parallax aa-contact-us-page-hero-image col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-6 col-xs-offset-3 col text-container">
+                                <h2>How can we help you?</h2>
+                                <h3>Get in contact</h3>
+                            </div>
+                        </div>
+                        <a class="contact-form-anchor-link">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                <i class="fa fa-angle-down fa-stack-1x" style="font-size: 1.5em;"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us-form">
+                <div class="inner-contact-us-form">
+                    <h1 class="contact-us-form-header">Contact Form</h1>
+                    <div class="contact-us-form-body">
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            This is an alert box.
+                        </div>
+                        <form id="contact-us-form"
+                            action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                            <input type=hidden name="oid" value="00D24000000YRPu">
+                            <input type=hidden name="retURL" value="">
+                            <fieldset>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="first_name">First Name</label>
+                                    <input id="first_name" maxlength="40" name="first_name" size="20" type="text">
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="last_name">Last Name</label>
+                                    <input id="last_name" maxlength="80" name="last_name" size="20" type="text">
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <span class="label">Preferred contact method</span>
+                                    <div class="checkbox-group">
+                                        <div class="contact-us-form-field-wrapper">
+                                            <input id="form-phone" name="00N2400000Istrm" type="checkbox"
+                                                value="UK"><label for="form-country-uk"
+                                                class="form-checkbox">Email</label>
+                                        </div>
+                                        <div class="contact-us-form-field-wrapper">
+                                            <input id="form-phone" name="00N2400000Istrm" type="checkbox"
+                                                value="UK"><label for="form-country-uk"
+                                                class="form-checkbox">Phone</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="email">Email</label>
+                                    <input id="email" maxlength="80" name="email" size="20" type="text">
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="phone">Phone</label>
+                                    <input id="phone" maxlength="40" name="phone" size="20" type="text">
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="00N2400000EtJeo">I am</label>
+                                    <select id="00N2400000EtJeo" name="00N2400000EtJeo" title="Study begin year">
+                                        <option value="">--None--</option>
+                                        <option value="2017">Farrier</option>
+                                        <option value="2018">Mustad dealer</option>
+                                        <option value="2019">Veterinarian</option>
+                                        <option value="2020">Horse owner</option>
+                                        <option value="2021">Horse trainer</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">Other</option>
+                                    </select>
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="last_name">City</label>
+                                    <input id="city" maxlength="80" name="city" size="20" type="text">
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="00N2400000Istrh">Please contact me about</label>
+                                    <select id="00N2400000Istrh" name="00N2400000Istrh" title="Studies level">
+                                        <option value="">--None--</option>
+                                        <option value="Undergraduate">More product info</option>
+                                        <option value="Postgraduate">Where can I buy Mustad products</option>
+                                        <option value="Postgraduate">I have a complaint</option>
+                                        <option value="Postgraduate">I need advise on a specific case</option>
+                                        <option value="Postgraduate">Other question</option>
+                                    </select>
+                                </div>
+                                <div class="contact-us-form-field-wrapper">
+                                    <label for="00N2400000EB8hh">Additional Information</label><textarea
+                                        id="00N2400000EB8hh" name="00N2400000EB8hh" rows="8" type="text"
+                                        wrap="soft"></textarea>
+                                </div>
+                                <div class="contact__description1">
+                                    <p class="contact__p">
+                                        Thank you for filling out this form! You will soon be contacted by a Mustad
+                                        Maroc
+                                        representative.<br>
+                                        The Mustad Team
+                                    </p>
+                                </div>
+                                <div class="nav__actions">
+                                    <button type="button" class="btn btn-primary button"
+                                        onclick="submitForm()">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__contact">
+                <a href="#" class="footer__logo"><img
+                        src="https://www.mustad.com/profiles/mustad/themes/mustad_theme/img/static/footer_logo.svg" /></a>
+                <h1 class="contact__title">HOW CAN WE HELP YOU?</h1>
+                <p class="contact__description">
+                    Feel free to contact our service team if you have questions about our products and services.
+                </p>
+                <button type="button" class="button contact__button"><a href="contact.html" class="button__title">Ask us
+                        for advice</a></button>
+            </div>
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">ABOUT US</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.mustad.com/en_us/1832" class="footer__link">Since 1832</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mustad.com/en_us/dedicated-hoofcare-industry"
+                                class="footer__link">Dedicated to the hoofcare industry</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mustad.com/en_us/get-closer-your-profession" class="footer__link">About
+                                this website</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mustad.com/en_us/about-mustad-hoofcare-group"
+                                class="footer__link">About the Mustad Hoofcare Group</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">PRODUCT RANGE</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Horseshoes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Nails</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Rasps</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Farrier tools</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Care products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">CONTACT</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <address class="footer__info">
+                                21 zone industrielle<br>
+                                Settat, Maroc
+                            </address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">
+                                mustadmaroc@email.com <br>
+                                05237-29900
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">SOCIAL</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; All Rights Reserved By Yahya Hijazi
+        </span>
+    </footer>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="conts-assets/script.js"></script>
+</body>
+
+</html>

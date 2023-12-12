@@ -31,17 +31,17 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__items">
-                        <a href="#" class="nav__link">
+                        <a href="#home" class="nav__link">
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav__items nav1" id="myButton">
-                        <a href="#" class="nav__link">
+                        <a href="#product" class="nav__link">
                             <span>Products</span>
                         </a>
                         <ul class="dropdown__menu">
                             <li class="products__items">
-                                <a href="#" class="dropdown__link"><a>Horseshoes</span></a>
+                                <a href="#" class="dropdown__link"><span>Horseshoes</span></a>
 
                             </li>
                             <li class="products__items">
@@ -63,34 +63,31 @@
                         </ul>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__link">
+                        <a href="#buy" class="nav__link">
                             <span>Where to buy</span>
                         </a>
                         <ul class="dropdown__menu">
                             <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Local Stores</span></a>
+                                <a href="#" class="dropdown__link"><span>Local Store</span></a>
 
                             </li>
                             <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>International Stores</span></a>
+                                <a href="https://www.mustad.com/en_us/store-locator"
+                                    class="dropdown__link"><span>International Stores</span></a>
 
                             </li>
                         </ul>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__link">
+                        <a href="#about" class="nav__link">
                             <span>About Us</span>
-                        </a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__link">
-                            <span>Testimonial</span>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="nav__actions">
-                <button type="button" class="button"><a href="#" class="button__title">Contact Us</a></button>
+                <button type="button" class="button"><a href="contact.html" class="button__title">Contact
+                        Us</a></button>
             </div>
         </nav>
     </header>
@@ -189,7 +186,7 @@
         </section>
 
         <!--==================== Products ====================-->
-        <section class="products__section section">
+        <section class="products__section section" id="product">
             <h2 class="section__title">
                 Our Products
             </h2>
@@ -227,46 +224,174 @@
             </div>
         </section>
 
-        <!--==================== Top Products ====================-->
-        <section class="top section" id="top">
-
-        </section>
-
         <!--==================== Where to Buy ====================-->
         <section class="buy section" id="buy">
-
+            <div class="buy__container">
+                <div class="buy__card">
+                    <h2 class="buy__title">
+                        Store Locator
+                    </h2>
+                    <p class="buy__description">
+                        Seeking a distributor or dealer for horseshoes, nails, or hoof care tools in Morocco?Connect
+                        with us</p>
+                    <button type="button" class="button"><a href="contact.html" class="button__title">Contact Us</a></button>
+                </div>
+                <div class="buy__map" id="map">
+                    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+                    <gmpx-api-loader key="AIzaSyAFOVo15-LD4_M9gERnCqTNZI_JAcmwV1c"
+                        solution-channel="GMP_QB_locatorplus_v10_c" class="gmp__buy"></gmpx-api-loader>
+                    <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
+                </div>
+            </div>
         </section>
 
         <!--==================== About Us ====================-->
         <section class="about section" id="about">
+            <div class="about__container container">
+                <article class="about__article">
+                    <div class="about__body">
+                        <video class="about__video" autoplay muted loop>
+                            <source
+                                src="https://player.vimeo.com/progressive_redirect/playback/695717569/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1377975833&signature=a97c1da012a2afce79808afb99f3b91a55159f4a73e471a9396cbf85f221f469"
+                                type="video/mp4">
+                        </video>
+                        <div class="about__card">
+                            <h2 class="about__title">
+                                About Us
+                            </h2>
+                            <p class="about__description">The Mustad Group has been active in the Hoofcare market for
+                                180
+                                years, being founded in Gjøvik, a small industrial town in Norway, in 1832. Products
+                                include
+                                horseshoe nails, horse shoes, horse rasps, farrier tools, vitamin and mineral
+                                supplements as
+                                well as specialty products for the care of horse’s hooves. The Mustad Hoofcare Group
+                                employs
+                                over 500 people in companies located all over the world. We are a truly global company
+                                with
+                                local presence in all the major markets. Every day we sponsor or directly perform a
+                                Hoofcare
+                                clinic somewhere in the world.
+                                Today the 7th generation of Mustad’s are owning and running the company.</p>
+                            <button type="button" class="button about__button"><a
+                                    href="https://www.mustad.com/en_ma/about-mustad-hoofcare-group"
+                                    class="button__title">READ MORE</a></button>
+                        </div>
+                    </div>
 
+
+                </article>
+            </div>
         </section>
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section" id="testimonial">
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__contact">
+                    <a href="#" class="footer__logo"><img
+                            src="https://www.mustad.com/profiles/mustad/themes/mustad_theme/img/static/footer_logo.svg" /></a>
+                    <h1 class="contact__title">HOW CAN WE HELP YOU?</h1>
+                    <p class="contact__description">
+                        Feel free to contact our service team if you have questions about our products and services.
+                    </p>
+                    <button type="button" class="button contact__button"><a href="contact.html"
+                            class="button__title">Ask us
+                            for advice</a></button>
+                </div>
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">ABOUT US</h3>
 
-        </section>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="https://www.mustad.com/en_us/1832" class="footer__link">Since 1832</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mustad.com/en_us/dedicated-hoofcare-industry"
+                                    class="footer__link">Dedicated to the hoofcare industry</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mustad.com/en_us/get-closer-your-profession"
+                                    class="footer__link">About this website</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mustad.com/en_us/about-mustad-hoofcare-group"
+                                    class="footer__link">About the Mustad Hoofcare Group</a>
+                            </li>
+                            <li>
+                                <a href="contact-page/contact.html" class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">PRODUCT RANGE</h3>
 
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Horseshoes</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Nails</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Rasps</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Farrier tools</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Care products</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">CONTACT</h3>
 
-        <!--==================== Contact Us ====================-->
-        <section class="contact section">
+                        <ul class="footer__links">
+                            <li>
+                                <address class="footer__info">
+                                    21 zone industrielle<br>
+                                    Settat, Maroc
+                                </address>
+                            </li>
 
-        </section>
-    </main>
+                            <li>
+                                <address class="footer__info">
+                                    mustadmaroc@email.com <br>
+                                    05237-29900
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">SOCIAL</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">instagram</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__copy">
+                &#169; All Rights Reserved By Yahya Hijazi
+            </span>
+        </footer>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-    </footer>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/js.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/js.js"></script>
 </body>
 
 </html>
