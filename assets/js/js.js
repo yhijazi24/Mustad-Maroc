@@ -1,3 +1,22 @@
+/*=============== Hamburger Menu ===============*/
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".navbar")
+const navLink = document.querySelector(".nav-link")
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+navLink.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+})
+var navLinks = navMenu.getElementsByTagName('a');
+for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function () {
+        navMenu.style.display = 'none';
+    });
+}
 /*=============== HOME SWIPER ===============*/
 let swiperHome = new Swiper('.home__swiper', {
     loop: true,

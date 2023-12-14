@@ -24,72 +24,78 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        
+
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
                 <img src="https://www.mustad.com/sites/mustad.com/files/logo/Mustad%E2%80%94logo.svg" alt="image">
             </a>
-           
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__items">
-                        <a href="#home" class="nav__link">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav__items nav1" id="myButton">
-                        <a href="#product" class="nav__link">
-                            <span>Products</span>
-                        </a>
-                        <ul class="dropdown__menu">
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Horseshoes</span></a>
+            <div class="navbar">
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a href="#home" class="nav__link">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__items nav1" id="myButton">
+                            <a href="#product" class="nav__link nav-link">
+                                <span>Products</span>
+                            </a>
+                            <ul class="dropdown__menu">
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link"><span>Horseshoes</span></a>
 
-                            </li>
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Nails</span></a>
+                                </li>
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link"><span>Nails</span></a>
 
-                            </li>
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Rasps</span></a>
+                                </li>
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link"><span>Rasps</span></a>
 
-                            </li>
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Tools</span></a>
+                                </li>
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link"><span>Tools</span></a>
 
-                            </li>
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link">Care<span></span></a>
+                                </li>
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link">Care<span></span></a>
 
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#buy" class="nav__link">
-                            <span>Where to buy</span>
-                        </a>
-                        <ul class="dropdown__menu">
-                            <li class="products__items">
-                                <a href="#" class="dropdown__link"><span>Local Store</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#buy" class="nav__link">
+                                <span>Where to buy</span>
+                            </a>
+                            <ul class="dropdown__menu dr1">
+                                <li class="products__items">
+                                    <a href="#" class="dropdown__link"><span>Local Store</span></a>
 
-                            </li>
-                            <li class="products__items">
-                                <a href="https://www.mustad.com/en_us/store-locator"
-                                    class="dropdown__link"><span>International Stores</span></a>
+                                </li>
+                                <li class="products__items">
+                                    <a href="https://www.mustad.com/en_us/store-locator"
+                                        class="dropdown__link"><span>International Stores</span></a>
 
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#about" class="nav__link">
-                            <span>About Us</span>
-                        </a>
-                    </li>
-                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#about" class="nav__link">
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__actions">
+                    <button type="button" class="button"><a href="contact.html" class="button__title">Contact
+                            Us</a></button>
+                </div>
             </div>
-            <div class="nav__actions">
-                <button type="button" class="button"><a href="contact.html" class="button__title">Contact
-                        Us</a></button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -236,7 +242,8 @@
                     <p class="buy__description">
                         Seeking a distributor or dealer for horseshoes, nails, or hoof care tools in Morocco?Connect
                         with us</p>
-                    <button type="button" class="button"><a href="contact.html" class="button__title">Contact Us</a></button>
+                    <button type="button" class="button"><a href="contact.html" class="button__title">Contact
+                            Us</a></button>
                 </div>
                 <div class="buy__map" id="map">
                     <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>

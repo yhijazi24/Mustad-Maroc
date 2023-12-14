@@ -1,3 +1,7 @@
+function toggleMenu() {
+    var hamburger = document.querySelector('.hamburger');
+    hamburger.classList.toggle('active');
+  }
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 document.addEventListener('DOMContentLoaded', () => {
     const productsLink = document.getElementById('productsLink');
