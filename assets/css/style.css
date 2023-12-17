@@ -79,7 +79,7 @@ body {
     color: var(--text-color);
     transition: background-color .4s;
 
-   
+
 }
 
 input,
@@ -135,7 +135,7 @@ img {
 
 .main {
     overflow: hidden;
-    
+
     /* For animation ScrollReveal */
 }
 
@@ -814,6 +814,10 @@ gmpx-store-locator {
         padding-bottom: 20px;
     }
 
+    .dropdown__menu {
+        left: -500px;
+    }
+
     .home__container {
         scale: 1;
     }
@@ -1293,6 +1297,9 @@ gmpx-store-locator {
     .nav__actions {
         margin-bottom: 15px;
     }
+    .dropdown__menu{
+        left: initial;
+    }
 
     .home__article,
     .home__bg {
@@ -1536,20 +1543,22 @@ gmpx-store-locator {
 /* For large devices */
 @media screen and (min-width:1220px) {
 
-    .header{
+    .header {
         display: flex;
         justify-content: center;
 
     }
-    .nav{
-        width: 1220px;
+
+    .nav {
+        width: 1200px;
     }
+
     .nav {
         height: var(--header-height);
         display: flex;
         justify-content: space-between;
         align-items: center;
-     
+
     }
 
     .navbar {
@@ -1811,6 +1820,7 @@ gmpx-store-locator {
     .about__button {
         border: 3px solid #0057B8;
     }
+
     .footer {
         margin-top: 0px;
         padding-bottom: 30px;
@@ -1826,7 +1836,7 @@ gmpx-store-locator {
 
 
     .footer__data {
-        grid-template-columns: repeat(3, max-content);
+        grid-template-columns: repeat(4, max-content);
         gap: 3rem 2rem;
     }
 
@@ -1865,6 +1875,7 @@ gmpx-store-locator {
 }
 
 @media screen and (min-width:1600px) {
+
     .home__article,
     .home__bg {
         width: 1500px;
@@ -1882,19 +1893,22 @@ gmpx-store-locator {
         scale: 0.6;
     }
 
-    .about{
+    .about {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .about__video{
+
+    .about__video {
         right: 0px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .footer__data {
         grid-template-columns: repeat(4, max-content);
         gap: 3rem 2rem;

@@ -58,26 +58,3 @@ const sr = ScrollReveal({
     delay: 100,
 })
 sr.reveal('.container-fluid', { delay: 100 })
-/*=============== CONTACT FORM VALIDATION ===============*/
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // Validate form fields
-    var formIsValid = true;
-
-    // Basic validation for required fields
-    var requiredFields = ['firstName', 'lastName', 'email', 'phone', 'city', '00N2400000EtJeo', '00N2400000Istrh'];
-
-    requiredFields.forEach(function (field) {
-        var fieldValue = document.getElementById(field).value.trim();
-        if (fieldValue === '') {
-            formIsValid = false;
-        }
-    });
-
-
-});
-
-/*=============== CONTACT FORM SENDER ===============*/
-
-
