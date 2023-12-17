@@ -244,12 +244,12 @@ img {
     text-decoration: none;
 }
 
-.button:hover .button__title {
+.button2:hover .button__title {
     color: white;
     text-decoration: none;
 }
 
-button {
+.button2 {
     display: inline-block;
     background-color: #ffffff;
     color: #0057B8;
@@ -259,7 +259,7 @@ button {
     border: 1px solid #0057B8;
 }
 
-button:hover {
+.button2:hover {
     box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
     background-color: #0057B8;
     color: white;
@@ -282,7 +282,161 @@ button:hover {
 
 }
 
+/*=============== PRODUCTS SECTION ===============*/
+.aa-contact-us-page-hero-image {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 170px;
+    color: #ffffff;
+    text-align: left;
+    left: 609.6px;
+}
 
+.text-container {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aa-contact-us-page-hero-image::after {
+    content: " ";
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://www.mustad.com/sites/mustad.com/files/styles/950x500_focal/public/2021-06/img_5648_1.jpg?h=52d3fcb6&itok=YxS4xLj5) linear-gradient(to right, #0057B8, #9C9C9C);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+aa-contact-us-page-hero-image .text-container {
+    max-width: 600px;
+}
+
+.aa-contact-us-page-hero-image h2 {
+    width: max-content;
+    font-weight: bold;
+    font-size: 49px;
+    color: #0057B8;
+}
+
+.aa-contact-us-page-hero-image h3 {
+    width: max-content;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    font-style: italic;
+}
+
+.aa-contact-us-page-address p {
+    width: 100%;
+}
+
+.aa-contact-us-page-hero-image .contact-form-anchor-link {
+    color: #fff;
+    font-size: 20px;
+    margin-left: -1em;
+    display: block;
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    bottom: 60px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.aa-contact-us-page-hero-image .contact-form-anchor-link:hover {
+    color: darken(#ffffff, 15%);
+    transform: translateY(6px);
+    transition: all 0.3s ease;
+}
+
+.box__container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 5px));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.button1 {
+    width: 280px;
+}
+.box {
+    width: 280px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product__img {
+    width: 220px;
+    flex: 1 0 auto;
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+    padding: 2rem 0 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product__img img {
+    height: 151px;
+
+}
+
+.box h3 {
+    color: black;
+    font-size: 18px;
+    width: 220px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.box p {
+    color: black;
+    font-size: 14px;
+    width: 220px;
+    height: 32px;
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+
+}
+.button1:hover .box h3,
+.button1:hover .box p {
+    color: white;
+    background-color: #0057B8;
+}
+.button1:hover .box {
+    background-color: #0057B8;
+    
+}
+.button1:hover .product__img {
+    background-color: white;
+}
+.button1:hover .product__a {
+    transform: translateY(5px);
+}
 /*=============== FOOTER ===============*/
 .footer {
     margin-top: 0px;
@@ -453,6 +607,8 @@ button:hover {
         align-items: center;
         display: flex;
         justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 250px;
     }
 
     .footer__container {
