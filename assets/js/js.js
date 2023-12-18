@@ -11,12 +11,7 @@ navLink.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 })
-var navLinks = navMenu.getElementsByTagName('a');
-for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', function () {
-        navMenu.style.display = 'none';
-    });
-}
+
 /*=============== HOME SWIPER ===============*/
 let swiperHome = new Swiper('.home__swiper', {
     loop: true,
@@ -68,7 +63,7 @@ const scrollActive = () => {
         if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
             sectionsClass.classList.add('active-link')
         } else {
-            sectionsClass.classList.remove('active-link')
+           
         }
     })
 }

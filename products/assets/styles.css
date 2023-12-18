@@ -609,8 +609,11 @@ aa-contact-us-page-hero-image .text-container {
         justify-content: center;
         padding-bottom: 100px;
         padding-top: 250px;
+        
     }
-
+    .aa-contact-us-page-hero-image h2,.aa-contact-us-page-hero-image h3{
+        width: 473.7px;
+    }
     .footer__container {
         display: block;
     }
@@ -633,6 +636,9 @@ aa-contact-us-page-hero-image .text-container {
 
 
 @media screen and (min-width:750px) {
+    .aa-contact-us-page-hero-image h2,.aa-contact-us-page-hero-image h3{
+        width: 700px;
+    }
     .footer {
         margin-left: 20px;
     }

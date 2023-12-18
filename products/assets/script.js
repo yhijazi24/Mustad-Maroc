@@ -11,12 +11,6 @@ navLink.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 })
-var navLinks = navMenu.getElementsByTagName('a');
-for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', function () {
-        navMenu.style.display = 'none';
-    });
-}
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 document.addEventListener('DOMContentLoaded', () => {
     const productsLink = document.getElementById('productsLink');
@@ -57,4 +51,4 @@ const sr = ScrollReveal({
     duration: 2000,
     delay: 100,
 })
-sr.reveal('.container-fluid', { delay: 100 })
+sr.reveal('.container-fluid , .box__container', { delay: 100 })
