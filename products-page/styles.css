@@ -244,12 +244,12 @@ img {
     text-decoration: none;
 }
 
-.button:hover .button__title {
+.button2:hover .button__title {
     color: white;
     text-decoration: none;
 }
 
-button {
+.button2 {
     display: inline-block;
     background-color: #ffffff;
     color: #0057B8;
@@ -259,7 +259,7 @@ button {
     border: 1px solid #0057B8;
 }
 
-button:hover {
+.button2:hover {
     box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
     background-color: #0057B8;
     color: white;
@@ -282,8 +282,7 @@ button:hover {
 
 }
 
-/*=============== CONTACT US ===============*/
-
+/*=============== PRODUCTS SECTION ===============*/
 .aa-contact-us-page-hero-image {
     position: relative;
     padding-top: 200px;
@@ -292,16 +291,15 @@ button:hover {
     text-align: left;
     left: 609.6px;
 }
-.aa-contact-us-page-hero-image1 {
-    position: relative;
-    padding-top: 200px;
-    padding-bottom: 170px;
-    color: #ffffff;
-    text-align: left;
-    left: 609.6px;
-}
+
 .text-container {
     width: 300px;
+    text-align: center;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .aa-contact-us-page-hero-image::after {
@@ -322,37 +320,18 @@ aa-contact-us-page-hero-image .text-container {
 }
 
 .aa-contact-us-page-hero-image h2 {
+    width: max-content;
     font-weight: bold;
     font-size: 49px;
     color: #0057B8;
 }
 
 .aa-contact-us-page-hero-image h3 {
-    font-size: 23px;
-    font-weight: 200;
-    color: #0057B8;
-}
-.text {
-    width: 1000px;
-    font-weight: 500;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-.text2 {
     width: max-content;
     font-size: 20px;
     font-weight: 200;
     color: black;
-}
-.text-container1 {
-    width: 300px;
-    text-align: center;
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    font-style: italic;
 }
 
 .aa-contact-us-page-address p {
@@ -378,259 +357,86 @@ aa-contact-us-page-hero-image .text-container {
     transition: all 0.3s ease;
 }
 
-
-.inner-contact-us-form {
-    max-width: 70%;
-    margin: 0px auto;
-    vertical-align: middle;
-    overflow: auto;
+.box__container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 5px));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.contact-us-form {
-    background-color: white;
-    /* AA: this can be deleted later */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.button1 {
+    width: 280px;
 }
-
-.inner-contact-us-form {
+.box {
+    width: 280px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
 }
 
-.inner-contact-us-form h1 {
-    color: #0057B8;
-    font-family: var(--body-font);
-    display: block;
-    float: left;
-    vertical-align: top;
-    text-align: left;
-    text-transform: uppercase;
+.product__img {
     width: 220px;
-    padding-bottom: 30px;
+    flex: 1 0 auto;
+    padding-bottom: 32px;
+    margin-bottom: 20px;
+    padding: 2rem 0 3rem;
+    display: flex;
+    justify-content: center;
 }
 
-div.contact-us-form-body {
-    display: block;
-    float: left;
-    width: calc(100% - 200x);
+.product__img img {
+    height: 151px;
+
 }
 
-.contact-us-form .contact-us-form-field-wrapper label,
-.contact-us-form .contact-us-form-field-wrapper span.label {
-    font-family: var(--body-color);
-    color: #0057B8;
-    display: block;
-    float: left;
+.box h3 {
+    color: black;
+    font-size: 18px;
+    width: 220px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: 15px;
     text-align: left;
-    width: 240px;
-    font-size: 1em;
-    padding-left: 0px;
-    padding-right: 0px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 }
-
-.contact-us-form input {
-    height: 35px;
-    float: left;
-    display: block;
-    background-color: #ffffff;
-    border: 1px solid black;
-}
-
-.contact-us-form input[type="text"] {
-    width: 400px;
-}
-
-.contact-us-form select,
-.contact-us-form .checkbox-group {
-    float: left;
-    display: block;
-}
-
-.contact-us-form select {
-    width: 150px;
-}
-
-.contact-us-form .checkbox-group {
-    text-align: left;
-    color: #ffffff;
-}
-
-.contact-us-form textarea {
-    float: left;
-    display: block;
-    background-color: #ffffff;
-    width: 400px;
-    border: 1px solid black;
-}
-
-.contact-us-form-field-wrapper {
-    clear: both;
-    padding: 10px 10px;
-    padding-bottom: 40px;
-}
-
-.checkbox-group .contact-us-form-field-wrapper {
-    padding: inherit;
-}
-
-@keyframes buttons {
-    0% {
-        transform: scale(0.1);
-    }
-
-    50% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.p1 {
-    color: red;
-}
-
-.p2 {
-    color: #0057B8;
-}
-
-.contact__p {
-    align-items: center;
-    text-align: center;
+.box p {
+    color: black;
     font-size: 14px;
+    width: 220px;
+    height: 32px;
+    text-align: left;
     font-weight: 300;
-    line-height: 2;
-    font-family: var(--body-font);
-}
-
-.clear {
-    width: 100%;
-    display: block;
-    clear: both;
-}
-
-.contact-us-form label.form-checkbox {
-    max-width: 240px;
-    margin-left: 10px;
-    margin-top: 7px;
-}
-
-.contact-us-form button.btn {
-    align-items: center;
-    font-size: 1.3em;
-    margin: 30px 10px;
-}
-
-#message{
-    color: red;
-    font-family: var(--body-font);
-    font-size: 16px;
-}
-/* Smartphones in landscape mode (480-768px) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-    /* placeholder */
-    .inner-contact-us-form {
-        max-width: 80%;
-    }
-
-    .inner-contact-us-form h1 {
-        font-size: 1.7em;
-        max-width: 300px;
-    }
-
-    div.checkbox-group {
-        width: 100%;
-    }
-
-    .contact-us-form .contact-us-form-field-wrapper label,
-    .contact-us-form .contact-us-form-field-wrapper span.label {
-        width: 250px;
-    }
-
-    .contact-us-form label.form-checkbox {
-        width: inherit;
-        max-width: 240px;
-        color: #9C9C9C;
-    }
-
-    .contact-us-form .contact-us-form-field-wrapper input[type="text"],
-    .contact-us-form .contact-us-form-field-wrapper select,
-    .contact-us-form .contact-us-form-field-wrapper textarea {
-        clear: both;
-        width: 250px;
-    }
-}
-
-/* Smartphones in portrait mode (0-479px) */
-@media only screen and (max-width: 479px) {
-
-    /* placeholder */
-    .inner-contact-us-form {
-        max-width: 90%;
-    }
-
-    .inner-contact-us-form h1 {
-        font-size: 1.5em;
-        max-width: 280px;
-    }
-
-    div.checkbox-group {
-        width: 100%;
-    }
-
-    .contact-us-form .contact-us-form-field-wrapper label,
-    .contact-us-form .contact-us-form-field-wrapper span.label {
-        width: 250px;
-    }
-
-    .contact-us-form label.form-checkbox {
-        width: inherit;
-        max-width: 240px;
-    }
-
-    .contact-us-form .contact-us-form-field-wrapper input[type="text"],
-    .contact-us-form .contact-us-form-field-wrapper select,
-    .contact-us-form .contact-us-form-field-wrapper textarea {
-        clear: both;
-        width: 250px;
-    }
-}
-
-input[type="text"],input[type="email"],input[type="tel"] {
-
-    box-sizing: border-box;
-    padding: 8px;
-    border: 1px solid #000;
-    border-radius: 5px;
+    font-style: italic;
 
 }
-
-input[type="submit"] {
+.button1:hover .box h3,
+.button1:hover .box p {
+    color: white;
     background-color: #0057B8;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    position: relative;
-    left: 45%;
 }
-
-input[type="submit"]:hover {
-    background-color: #003366;
+.button1:hover .box {
+    background-color: #0057B8;
+    
 }
-
+.button1:hover .product__img {
+    background-color: white;
+}
+.button1:hover .product__a {
+    transform: translateY(5px);
+}
 /*=============== FOOTER ===============*/
 .footer {
     margin-top: 0px;
@@ -801,8 +607,13 @@ input[type="submit"]:hover {
         align-items: center;
         display: flex;
         justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 250px;
+        
     }
-
+    .aa-contact-us-page-hero-image h2,.aa-contact-us-page-hero-image h3{
+        width: 473.7px;
+    }
     .footer__container {
         display: block;
     }
@@ -825,6 +636,9 @@ input[type="submit"]:hover {
 
 
 @media screen and (min-width:750px) {
+    .aa-contact-us-page-hero-image h2,.aa-contact-us-page-hero-image h3{
+        width: 700px;
+    }
     .footer {
         margin-left: 20px;
     }
