@@ -52,3 +52,13 @@ const sr = ScrollReveal({
     delay: 100,
 })
 sr.reveal('.container-fluid , .box__container', { delay: 100 })
+
+/*=============== PRODUCT IMAGE SLIDE ===============*/
+function img(anything) {
+    document.querySelector('.slide').src = anything;
+}
+
+function change(change) {
+    const line = document.querySelector('.home');
+    line.style.background = change;
+} 
