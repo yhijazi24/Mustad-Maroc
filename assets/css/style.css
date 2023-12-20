@@ -1225,7 +1225,9 @@ gmpx-store-locator {
         width: 400px;
         left: 180px;
     }
-
+    .footer{
+        margin-left: 20px;
+    }
     .footer__container {
         display: flex;
     }
@@ -1836,7 +1838,7 @@ gmpx-store-locator {
 
 
     .footer__data {
-        grid-template-columns: repeat(4, max-content);
+        grid-template-columns: repeat(3, max-content);
         gap: 3rem 2rem;
     }
 

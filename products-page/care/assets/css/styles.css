@@ -322,8 +322,8 @@ img {
 }
 
 .option img {
-    width: 75px;
-    height: 75px;
+    width: fit-content;
+    height: fit-content;
     padding: 10px;
     border: 1px solid #c2c2c2;
     opacity: .5;
@@ -1093,7 +1093,7 @@ label,
 
 
     .footer__data {
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: repeat(3, max-content);
         gap: 3rem 2rem;
     }
 
