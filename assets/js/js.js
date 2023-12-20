@@ -7,10 +7,7 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
-navLink.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-})
+
 
 /*=============== HOME SWIPER ===============*/
 let swiperHome = new Swiper('.home__swiper', {
